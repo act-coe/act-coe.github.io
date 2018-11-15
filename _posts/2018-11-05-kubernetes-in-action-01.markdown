@@ -2,7 +2,7 @@
 layout: post
 title:  "Docker를 이해하기"
 date:   2018-11-05 11:27:24 +0900
-categories: [Kubernetes in action]
+tags: [Kubernetes in action]
 ---
 # 1. Introducing Kubernetes
 

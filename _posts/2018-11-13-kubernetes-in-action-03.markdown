@@ -2,7 +2,7 @@
 layout: post
 title:  "[K8S]POD에 대한 이론편"
 date:   2018-11-13 11:27:24 +0900
-categories: [Kubernetes in action]
+tags: [Kubernetes in action]
 ---
 
 ## 3 Running Containers in Kubernetes

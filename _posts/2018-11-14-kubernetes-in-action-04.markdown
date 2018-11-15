@@ -2,7 +2,8 @@
 layout: post
 title:  "[K8S]POD에 대한 활용편 "
 date:   2018-11-14 11:27:24 +0900
-categories: [Kubernetes in action]
+tags: [Kubernetes in action]
+comments: true
 ---
 목표 :
 1. POD을 생성, 실행, 삭제 한다.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Kubernetes Cluster"
 date:   2018-11-12 11:27:24 +0900
-categories: [Kubernetes in action]
+tags: [Kubernetes in action]
 ---
 ### 2.2 Kubernetes cluster
 
