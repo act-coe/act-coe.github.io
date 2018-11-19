@@ -1,0 +1,13 @@
+apiVersion: v1                #Kubernetes API Version
+kind: Pod                     #Type of resources
+metadata:
+  name: kubia-gpu             #Pod의 이름
+spec:
+  nodeSelector:
+    gpr: "true"
+  containers:
+  - image: sdzeus/kubia      #컨테이너 이미지 정보
+    name: kubia               #컨테이너 이름
+    ports:
+    - containerPort: 8080     #App의 Listening PORT정보
+      protocol: TCP
