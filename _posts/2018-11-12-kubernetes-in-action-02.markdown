@@ -98,7 +98,7 @@ $ kubectl run kubia --image=russell/kubia --port=8080
 - ps: kubectl run --generator=run/v1 is DEPRECATED and will be removed in a future version. Use kubectl create instead. ReplicationController/kubia created
 
 #### 2.3.1 PODS
-! [POD](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter2/figure2.5.png)
+! [POD](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter2/figure2.5.png)
 - 위의 그림과 같이 각각의 POD은 개별 IP, Hostname, Process를 가지고, 1개 이상의 Container를 구동시킨다.
 - POD List를 확인하기
 ```sh
@@ -112,7 +112,7 @@ $ kubectl describe PODs
 
 - 지금까지 한 내용을 그림으로 보자면 아래와 같다
 
-![Kubectl](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter2/figure2.6.png)
+![Kubectl](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter2/figure2.6.png)
 
 #### 2.3.2 Application에 접근하기
 
@@ -163,7 +163,7 @@ kubia-h867s 1/1 Running 0 2m 172.17.0.6 minikube
 ```
 - POD의 개수도 정상적으로 늘어난 것을 확인할 수 있다.
 
-![Kubectl](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter2/figure2.8.png)
+![Kubectl](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter2/figure2.8.png)
 
 #### 2.3.5 Kubernetes Dashboard
 
@@ -185,6 +185,6 @@ $ gcloud Container clusters describe kubiagrep -E "(usernamepassword):"
 $ kubectl create -f https://raw.githubusercontent.com/kubernetes/dashboard/master/src/deploy/recommended/kubernetes-dashboard.yaml
 ```
 
-![kubernetes Dashboard](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter2/figure2.9.png)
+![kubernetes Dashboard](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter2/figure2.9.png)
 
 @ 'Kubernetes in action', All Images Copy Rights Reserved.

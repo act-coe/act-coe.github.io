@@ -20,7 +20,7 @@ docker run busybox echo "Hello World"
 
 > Docker Run이 실행되는 순서
 
-![Docker Run](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter2/figure2.1.png)
+![Docker Run](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter2/figure2.1.png)
 
 ### 2.1.2 Docker Build
 
@@ -53,7 +53,7 @@ ENTRYPOINT ['node', 'app.js']
 - ADD : Container에 포함시킬 파일을 지정한다.
 - ENTRYPOINT: 이미지를 실행시키는 시점에 수행할 명령어를 지정한다.
 
-![Docker Build](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter2/figure2.2.png)
+![Docker Build](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter2/figure2.2.png)
 ```sh
 docker build -t kubia . !!! 뒤에 붙는 .을 꼭 적는다.
 ```
@@ -62,7 +62,7 @@ docker build -t kubia . !!! 뒤에 붙는 .을 꼭 적는다.
 
 > Docker Image Layer (FS-생략한다)
 
-![Docker Image Layer](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter2/figure2.3.png)
+![Docker Image Layer](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter2/figure2.3.png)
 
 
 ### 2.1.3 Running Container image
@@ -114,7 +114,7 @@ $ docker tag kubia (docker에 사용자 이름)/kubia
 ```
 위의 명령어를 실행하게 되면 아래와 같이 이미지 태그가 설정이 된다.
 
-![Docker Tag](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter2/figure2.4.png)
+![Docker Tag](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter2/figure2.4.png)
 
 1. push
 

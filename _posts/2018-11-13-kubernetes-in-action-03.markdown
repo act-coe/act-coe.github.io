@@ -14,7 +14,7 @@ tags: [Kubernetes, POD]
 - 아래 그림과 같이 POD은 여러 Node에 걸쳐서 작동하지 않는다.
 - Node는 여러 개의 독립적인 PODs를 가지고, 개별 POD은 여러 개의 Container를 가질 수 있다는 의미입니다.
 
-![Kubectl](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter3/figure3.1.png)
+![Kubectl](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter3/figure3.1.png)
 
 > Q1. 멀티 Container가 하나의 컨테이너에서 Multi Process를 띄우는 것보다 나을까?
 
@@ -36,7 +36,7 @@ tags: [Kubernetes, POD]
 
 아래 그림처럼 K8S에 있는 POD들은 단순하고, 공유 가능한 네트워크 Address 주소 값을 가진다. 즉, 이 말은 각각의 POD은 각각의 IP주소 값을 가지고 있으며, 이 IP를 이용해서 통신을 하기 때문에, NAT(Network Address Translation) gateway 같은 장비 없이- 마치 Local Area Network(LAN)처럼 - 통신이 가능하다.
 
-![Flat Inner-POD Network](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter3/figure3.2.png)
+![Flat Inner-POD Network](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter3/figure3.2.png)
 
 ### 전체 POD에 적절한 Container 구성
 
@@ -50,7 +50,7 @@ tags: [Kubernetes, POD]
 
 제목처럼 한 POD에 여러 Container를 구성하는 주된 이유는 메인 프로세스와 보완적인 하나이상의 프로세스들로 구성되어 있을 때이다 - 아래 그림처럼
 
-![Flat Inner-POD Network](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter3/figure3.3.png)
+![Flat Inner-POD Network](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter3/figure3.3.png)
 
 예를 들어보면 메인 Container가 Web Server이고 특정 디렉터리에 파일을 받는다고 생각하고, 다른 Container(a sidecar container)는 임시로 webServer에서 다운로드하는 파일을 저장해 놓는 경우, 게다가 이 sidecar Container가 log rotator나 log collector 혹은 data processor, communication adapter 같은 것들을 포함하고 있다면 더욱더 그럴 것이다.
 

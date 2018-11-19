@@ -132,7 +132,7 @@ Forwarding from [::1]:8888 -> 8080
 Handling connection for 8888 #추가됨: forward
 ```
 
-![Port-Forwarding](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter3/figure3.4.png)
+![Port-Forwarding](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter3/figure3.4.png)
 
 #### Label을 통한 POD의 조직하기
 
@@ -140,9 +140,9 @@ Handling connection for 8888 #추가됨: forward
 
 아래 두 그림을 보면 앞선 이야기가 쉽게 이해될 것이다.
 
-![Label Before](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter3/figure3.5.png)
+![Label Before](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter3/figure3.5.png)
 
-![Label After](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/assets/images/k8s/chapter3/figure3.6.png)
+![Label After](https://raw.githubusercontent.com/act-coe/act-coe.github.io/master/images/k8s/chapter3/figure3.6.png)
 
 먼저 그림에서는 분산되어 있는 MSA 환경을 표현한 것이다. 같은 POD 혹은 Container들이 여러 곳에 흩어져 있는 것을 볼 수 있다.
 두 번째 그림에서는, 여기에 app={type정보}, rel={Version정보} 이 두 라벨을 이용해서 각 POD을 구분할 수 있다는 것을 보여준다.
